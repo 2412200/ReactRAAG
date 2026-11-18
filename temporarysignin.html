@@ -1,0 +1,115 @@
+<main className="flex min-h-screen w-full items-center justify-center overflow-x-hidden bg-stone-50 px-4 py-8 font-sans">
+      <div className="w-full max-w-md rounded-2xl border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
+
+        {/* Logo */}
+        <header className="mb-8 text-center">
+          <div className="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-800 text-2xl font-bold text-white">
+            R
+          </div>
+          <h1 className="text-3xl font-bold tracking-widest text-slate-900">
+            RAAG
+          </h1>
+          <p className="mt-1 text-xs text-stone-500">
+            Connect. Trade. Grow.
+          </p>
+        </header>
+
+        {/* Heading */}
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-slate-900">
+            Welcome back
+          </h2>
+          <p className="mt-2 text-sm text-slate-500">
+            Sign in to your account to continue.
+          </p>
+        </div>
+
+        {/* Account type */}
+        <div className="mb-6 grid grid-cols-2 gap-2 rounded-xl bg-stone-100 p-1">
+          <button className="rounded-lg border border-stone-200 bg-white px-3 py-3 text-sm font-semibold text-amber-800 shadow-sm">
+            Retailer
+          </button>
+          <button className="rounded-lg px-3 py-3 text-sm font-medium text-slate-500 hover:text-slate-900">
+            Wholesaler
+          </button>
+        </div>
+
+        {/* Form structure */}
+        <form className="space-y-5">
+          <div>
+            <label
+              htmlFor="email"
+              className="mb-2 block text-sm font-medium text-slate-700"
+            >
+              Email or phone number
+            </label>
+            <input
+              id="email"
+              type="text"
+              placeholder="Enter email or phone number"
+              className="w-full rounded-xl border border-stone-300 px-4 py-3 text-sm outline-none transition placeholder:text-stone-400 focus:border-amber-800 focus:ring-2 focus:ring-amber-100"
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="password"
+              className="mb-2 block text-sm font-medium text-slate-700"
+            >
+              Password
+            </label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter your password"
+              className="w-full rounded-xl border border-stone-300 px-4 py-3 text-sm outline-none transition placeholder:text-stone-400 focus:border-amber-800 focus:ring-2 focus:ring-amber-100"
+            />
+          </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+            <label className="flex items-center gap-2 text-slate-600">
+              <input type="checkbox" className="accent-amber-800" />
+              Remember me
+            </label>
+            <a
+              href="/forgot-password"
+              className="font-medium text-amber-800 hover:underline"
+            >
+              Forgot password?
+            </a>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full rounded-xl bg-amber-800 px-4 py-3.5 font-semibold text-white transition hover:bg-amber-900 focus:ring-4 focus:ring-amber-100"
+          >
+            Sign In
+          </button>
+        </form>
+
+        {/* Divider */}
+        <div className="my-6 flex items-center gap-3">
+          <div className="h-px flex-1 bg-stone-200" />
+          <span className="text-xs text-stone-500">OR</span>
+          <div className="h-px flex-1 bg-stone-200" />
+        </div>
+
+        <button
+          type="button"
+          className="w-full rounded-xl border border-stone-300 px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-stone-50"
+        >
+          Continue with Google
+        </button>
+
+        {/* Signup */}
+        <p className="mt-6 text-center text-sm text-slate-500">
+          Don't have an account?{" "}
+          <a
+            href="/signup"
+            className="font-semibold text-amber-800 hover:underline"
+          >
+            Create account
+          </a>
+        </p>
+      </div>
+    </main>
